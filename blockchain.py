@@ -1,13 +1,16 @@
 import hashlib
 import json
 from time import time
+import requests
+import Flask from request
+
 
 class Blockchain(object):
     def __init__(self):
         self.chain = []
         self.pending_transactions = []
 
-        self.new_block(previous_hash="BrodyCoinGenisis", proof=100)
+        self.new_block(previous_hash="EEDBA33C1B1FF164A1FB3C11E2E8F1051AC5E6A257F717FE7C751BDFF8FF40DA", proof=100)
 
 
     def new_block(self, proof, previous_hash=None):
