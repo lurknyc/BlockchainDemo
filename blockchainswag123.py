@@ -10,6 +10,8 @@ import time
 from flask import Flask, request
 import requests
 
+IP= input('Where to Deploy the Chain?')
+
 
 class Block:
     def __init__(self, index, transactions, timestamp, previous_hash):
